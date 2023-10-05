@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Fast Figures</title>
+</head>
+
+<body>
+    <div class="content">
+        <div class="container">
+            <div class="timer-box">
+                <label for="timer">Timer</label>
+                <div class="timer" id="timer"></div>
+            </div>
+            <div class="item">
+                <div class="progress-bar">
+                    <div id="progress-bar-fill" class="progress-bar-fill" style="width: 25%"></div>
+                </div>
+                <div class="score-event" id="score"></div>
+            </div>
+            <div class="score-box">
+                <div class="score" id="scoreDisplay"></div>
+                <div class="" id="scoreDisplayNumber"></div>
+            </div>
+        </div>
+
+        <div class="container-title">
+            <h1>FastFigures</h1>
+        </div>
+
+        <div class="rectangle">
+            <div class="label">
+                Written Form:
+            </div>
+            <div class="randomNumber" id="randomNumber">
+            </div>
+            <div class="user">
+                <input class="userInput" type="text" id="userInput" autofocus>
+            </div>
+        </div>
+        <div class="underside">
+            <div class="radio">
+                <div class="box easy">
+                    <input type="radio" id="easylevel" name="options" value="1">
+                    <label for="easylevel">Easy</label>
+                </div>
+                <div class="box normal">
+                    <input type="radio" id="normallevel" name="options" value="2">
+                    <label for="normallevel">Normal</label>
+                </div>
+                <div class="box hard">
+                    <input type="radio" id="hardlevel" name="options" value="3" checked>
+                    <label for="hardlevel">Hard</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="right-part">
+            <img src="img/right-background.svg">
+            <div id="query" class="overlay-right"> <img src="img/query.png" alt=""></div>
+        </div>
+        <div class="left-part">
+            <img src="img/back.svg">
+            <div id="refresh-left" class="overlay-left"> <img src="img/refresh-left.svg" alt=""></div>
+        </div>
+    </div>
+
+    <script src="style.js"></script>
+</body>
+
+</html>

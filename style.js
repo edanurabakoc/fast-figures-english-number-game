@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const progressBarFill = document.querySelector('.progress-bar-fill');
 
     time = (shortestTime || '');
-    scoreDisplay.textContent = 'Score:';
+    scoreDisplay.textContent = 'High Score:';
     scoreDisplayNumber.textContent = time;
 
     const ones = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'];
@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 shortestTime = timeElapsed;
                 const score = document.getElementById('score');
                 score.innerHTML = 'New Record: <span style="color:green;">' + timeElapsed + '</span> Yey!';
-                scoreDisplay.textContent = 'Score:';
+                scoreDisplay.textContent = 'High Score:';
                 scoreDisplayNumber.textContent = timeElapsed;
                 setTimeout(function () {
                     score.innerHTML = '';
